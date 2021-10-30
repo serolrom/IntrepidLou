@@ -1,0 +1,23 @@
+--------- THE FIRST TREE ASSETS ---------
+
+You're free to use these sounds (and one dog biscuit box) in your project how you see fit (CC BY 3.0 license for my stuff). Most of the assets in my game were purchased on the Unity Asset Store and modified, and I can't redistribute those. So if you're looking for the main asset packs I used, check these links out:
+
+Stylized Nature Pack: https://assetstore.unity.com/packages/3d/environments/stylized-nature-pack-37457
+Free Stylized Foliages - https://assetstore.unity.com/packages/3d/vegetation/yughues-free-stylized-foliages-13392
+Free Footsteps System - https://assetstore.unity.com/packages/tools/audio/free-footsteps-system-47967
+Free Bushes - https://assetstore.unity.com/packages/3d/vegetation/plants/yughues-free-bushes-13168
+Brian's House - https://assetstore.unity.com/packages/3d/environments/urban/brian-s-house-44784
+Mountain Lake Environment - https://assetstore.unity.com/packages/3d/environments/mountain-lake-environment-48728
+Fantasy Skybox - https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-18216
+Forest Animal Pack - https://assetstore.unity.com/packages/3d/characters/animals/forest-animal-pack-1-45708
+
+
+
+--------- CREDITING SOUNDS ---------
+
+Some of the sounds were remixed from existing media with an CC BY 3.0 license. Please credit the relevant person if you use them:
+
+StarPickup.wav - sandyrb
+waterfall.wav - MrAuralization
+wind_loop.wav - kangaroovindaloo
+wolf-growl.wav - newagesoup
