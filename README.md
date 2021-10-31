@@ -11,6 +11,12 @@ For the most part, you will be supported by everyone. You'll most likely not fin
 Dev Log
 -------  
 
+**2021-10-31**  
+Today's 'productive' work went to searching resources. I got a couple of assets: the **Nature Starter Kit 2** from which I plan to get the kind of scenery I want, and also checked out some video about **Vegatation Spawner**, which will indeed come handy with such a big terrain.  
+Speaking of which, a 10000 x 10000 grid is a pretty convenient size. The problem with this distance is how to fill it up with relevant content. Smaller than that and it won't make sense to travel by plane. That's why I'm generically looking at procedural generators. The idea is to procedurally create the terrain and vegetation. For villages I can maybe create them in a more manual way.  
+A strategy might be like creating 1000 x 1000 squares, which are probably easier to explore manually, and then add neighbour regions, but that means I'll end up having to create 100 of these. We'll see. Then, the idea is to create the manual content and afterwards fill it up with procedural vegetation, which takes care automatically about not placing grass or tress on the layers where I don't allow it to, and also restrict it depending on terrain elevation. 
+
+
 **2021-10-29**  
 Not much progress in the last couple of days. Real life commitments kept me a bit away from the game.  
 Also, this weekend I have to plan a real life flight route planned for Monday from my aerodrome to a nearby one, as part of my license journey. In order to be prepared for weather issues, I have to prepare two routes, one to an aerodrome to the north, and another one to the south, and will be simulating them in Flight Simulator. I hope this simulation time pays off!  
