@@ -16,6 +16,9 @@ Not much progress in the last couple of days. Real life commitments kept me a bi
 Also, this weekend I have to plan a real life flight route planned for Monday from my aerodrome to a nearby one, as part of my license journey. In order to be prepared for weather issues, I have to prepare two routes, one to an aerodrome to the north, and another one to the south, and will be simulating them in Flight Simulator. I hope this simulation time pays off!  
 It's probably worth commenting at this point that I'm getting my ultra-light license. I've finally stopped wishing to fly for real, and got to it. 
 Needless to say, my real flying helps me tweak the flight model for Intrepid Lou. I want this to be a game, not a simulator. Everyone should be able to pilot the game airplane. But at the same time, I want it to feel real. I firmly believe that, for a simple plane, you don't need a fully-fledged study-level flight simulator to transmit the sensation of the real thing. You can even transmit a significant part of the real skill it takes to fly for real, without needing to get real pilot training.  
+  
+Hmm... I ended up creating a github for source control AND logo with a background picture of mountains made by myself!. It's not impressive, but certainly good enough for my needs.  
+Best thing again is how much I've learned today.
 
 **2021-10-28**  
 Human and Machine. They'll be doing great things together.  
