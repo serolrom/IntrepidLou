@@ -16,6 +16,9 @@ Today's 'productive' work went to searching resources. I got a couple of assets:
 Speaking of which, a 10000 x 10000 grid is a pretty convenient size. The problem with this distance is how to fill it up with relevant content. Smaller than that and it won't make sense to travel by plane. That's why I'm generically looking at procedural generators. The idea is to procedurally create the terrain and vegetation. For villages I can maybe create them in a more manual way.  
 A strategy might be like creating 1000 x 1000 squares, which are probably easier to explore manually, and then add neighbour regions, but that means I'll end up having to create 100 of these. We'll see. Then, the idea is to create the manual content and afterwards fill it up with procedural vegetation, which takes care automatically about not placing grass or tress on the layers where I don't allow it to, and also restrict it depending on terrain elevation. 
 
+... aaaaand... later this day.... **my pilot can board the plane!!!** Well, maybe I have to do quite some refinement, but the boarding action is there. It's now a matter of positioning when getting in and out of the plane. Proper animations are also missing, something for the future. More immediate attention is needed to get the plane started and functional when the pilot is on board.  
+Credits for the boarding functionality are for: https://www.youtube.com/watch?v=R4X8dsQeLQs
+
 
 **2021-10-29**  
 Not much progress in the last couple of days. Real life commitments kept me a bit away from the game.  
