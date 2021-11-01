@@ -10,6 +10,8 @@ For the most part, you will be supported by everyone. You'll most likely not fin
 
 Dev Log
 -------  
+**2021-11-01**  
+Gained consistency on boarding/deboarding the plane. But as usual, a couple of things broke down in the process. I can confidently call it a day.  
 
 **2021-10-31**  
 Today's 'productive' work went to searching resources. I got a couple of assets: the **Nature Starter Kit 2** from which I plan to get the kind of scenery I want, and also checked out some video about **Vegatation Spawner**, which will indeed come handy with such a big terrain.  
