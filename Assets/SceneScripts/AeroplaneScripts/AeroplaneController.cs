@@ -24,6 +24,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
         public float Altitude { get; private set; }                     // The aeroplane's height above the ground.
         public float Throttle { get; private set; }                     // The amount of throttle being used.
         public bool AirBrakes { get; private set; }                     // Whether or not the air brakes are being applied.
+        public bool WheelBrakes { get; private set; }
         public float ForwardSpeed { get; private set; }                 // How fast the aeroplane is traveling in it's forward direction.
         public float EnginePower { get; private set; }                  // How much power the engine is being given.
         public float MaxEnginePower{ get { return m_MaxEnginePower; }}    // The maximum output of the engine.
@@ -60,7 +61,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
         }
 
 
-        public void Move(float rollInput, float pitchInput, float yawInput, float throttleInput, bool airBrakes)
+        public void Move(float rollInput, float pitchInput, float yawInput, float throttleInput, bool airBrakes, bool wheelBrakes)
         {
             // transfer input parameters into properties.s
             RollInput = rollInput;
@@ -68,6 +69,9 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
             YawInput = yawInput;
             ThrottleInput = throttleInput;
             AirBrakes = airBrakes;
+            WheelBrakes = wheelBrakes;
+
+            CalculateAltitude();
 
             ClampInputs();
 
@@ -87,7 +91,17 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
 
             CalculateTorque();
 
-            CalculateAltitude();
+            
+        }
+
+
+        private void CalculateAltitude()
+        {
+            // Altitude calculations - we raycast downwards from the aeroplane
+            // starting a safe distance below the plane to avoid colliding with any of the plane's own colliders
+            var ray = new Ray(transform.position - Vector3.up * 10, -Vector3.up);
+            RaycastHit hit;
+            Altitude = Physics.Raycast(ray, out hit) ? hit.distance + 10 : transform.position.y;
         }
 
 
@@ -172,6 +186,9 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
             float extraDrag = m_Rigidbody.velocity.magnitude*m_DragIncreaseFactor;
             // Air brakes work by directly modifying drag. This part is actually pretty realistic!
             m_Rigidbody.drag = (AirBrakes ? (m_OriginalDrag + extraDrag)*m_AirBrakesEffect : m_OriginalDrag + extraDrag);
+            // when rolling (no altitude) and braking, drag should be much bigger
+
+            //m_Rigidbody.drag = (WheelBrakes ? (m_OriginalDrag + extraDrag) * m_AirBrakesEffect : m_OriginalDrag + extraDrag);
             // Forward speed affects angular drag - at high forward speed, it's much harder for the plane to spin
             m_Rigidbody.angularDrag = m_OriginalAngularDrag*ForwardSpeed;
         }
@@ -243,14 +260,6 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
         }
 
 
-        private void CalculateAltitude()
-        {
-            // Altitude calculations - we raycast downwards from the aeroplane
-            // starting a safe distance below the plane to avoid colliding with any of the plane's own colliders
-            var ray = new Ray(transform.position - Vector3.up*10, -Vector3.up);
-            RaycastHit hit;
-            Altitude = Physics.Raycast(ray, out hit) ? hit.distance + 10 : transform.position.y;
-        }
 
 
         // Immobilize can be called from other objects, for example if this plane is hit by a weapon and should become uncontrollable

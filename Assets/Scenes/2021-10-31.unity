@@ -464,15 +464,15 @@ MonoBehaviour:
   m_MaxEnginePower: 8
   m_Lift: 0.015
   m_ZeroLiftSpeed: 300
-  m_RollEffect: 0.7
-  m_PitchEffect: 0.6
-  m_YawEffect: 0.2
-  m_BankedTurnEffect: 0.2
-  m_AerodynamicEffect: 0.6
+  m_RollEffect: 0.3
+  m_PitchEffect: 0.07
+  m_YawEffect: 0.1
+  m_BankedTurnEffect: 0.05
+  m_AerodynamicEffect: 0.4
   m_AutoTurnPitch: 0
   m_AutoRollLevel: 0
   m_AutoPitchLevel: 0
-  m_AirBrakesEffect: 3
+  m_AirBrakesEffect: 0
   m_ThrottleChangeSpeed: 0.3
   m_DragIncreaseFactor: 0.012
 --- !u!54 &785111546
@@ -502,8 +502,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.98028, y: 3.536786, z: 2.074068}
-  m_Center: {x: 0.024874687, y: 1.7244425, z: -0.53703403}
+  m_Size: {x: 6.98028, y: 2.5556564, z: 2.074068}
+  m_Center: {x: 0.024874687, y: 1.2338777, z: -0.53703403}
 --- !u!114 &785111548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,10 +517,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1784796838}
-  vehicleActive: 0
-  SeatPoint: {fileID: 1108601578}
-  sittingOffset: {x: 0, y: 0, z: 0}
-  exitPoint: {fileID: 1548790211}
+  aeroplaneControlScript: {fileID: 785111545}
+  aeroplaneUserControlScript: {fileID: 785111544}
+  aeroplaneAudio: {fileID: 785111543}
+  airplaneActive: 0
+  boardLocation: {fileID: 1108601578}
+  outLocation: {fileID: 1548790211}
   transitionSpeed: 0.2
 --- !u!1001 &804349978
 PrefabInstance:
@@ -694,7 +696,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855834071}
-  m_LocalRotation: {x: 0.19737816, y: -0.13704255, z: 0.027877128, w: 0.97030103}
+  m_LocalRotation: {x: 0.19737816, y: -0.13704258, z: 0.027877131, w: 0.97030103}
   m_LocalPosition: {x: 48.83, y: 23.00888, z: -21.58003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -730,7 +732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1108601578}
   m_Layer: 0
-  m_Name: Seat
+  m_Name: PilotSeatPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -761,7 +763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1548790211}
   m_Layer: 0
-  m_Name: ExitPoint
+  m_Name: OutPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -988,7 +990,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989379021}
-  m_LocalRotation: {x: 0.19737816, y: -0.13704255, z: 0.027877128, w: 0.97030103}
+  m_LocalRotation: {x: 0.19737816, y: -0.13704258, z: 0.027877131, w: 0.97030103}
   m_LocalPosition: {x: 48.83, y: 23.00888, z: -21.58003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

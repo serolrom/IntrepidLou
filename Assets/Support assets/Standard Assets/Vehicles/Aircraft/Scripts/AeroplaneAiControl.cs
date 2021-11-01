@@ -98,12 +98,12 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
                 yawInput *= currentSpeedEffect;
 
                 // pass the current input to the plane (false = because AI never uses air brakes!)
-                m_AeroplaneController.Move(rollInput, pitchInput, yawInput, throttleInput, false);
+                m_AeroplaneController.Move(rollInput, pitchInput, yawInput, throttleInput, false, false);
             }
             else
             {
                 // no target set, send zeroed input to the planeW
-                m_AeroplaneController.Move(0, 0, 0, 0, false);
+                m_AeroplaneController.Move(0, 0, 0, 0, false, false);
             }
         }
 
