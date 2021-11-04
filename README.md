@@ -2,7 +2,9 @@
  A romantic and intimate aviation adventure.  
 
 **Intrepid Lou** is a video game currently in the first steps of development.  
-You are an intrepid pilot who assembled an intrepid plane in a distant island, in the golden age of aviation. Except that in this remote place aviation is a rare thing. That's why your job is so valuable for the residents, and you'll never fall short of tasks to help the locals. Be a courier, perform search (and even rescue) missions, take fellows to a scenic flight, anything that brings enough money to keep up your activity (see what I did there?).  
+
+You are an intrepid pilot who assembled an intrepid plane in a distant island, in the golden age of aviation. Except that in this remote place aviation is a rare thing. That's why your job is so valuable for the residents, and you'll never fall short of tasks to help the locals. Be a courier, perform search (and even rescue) missions, take fellows to a scenic flight, anything that brings enough money to "keep up" with your activity.  
+
 For the most part, you will be supported by everyone. You'll most likely not find enemies. *Human* enemies, that is. Your real enemies will be the winds, the weather, your own navigation skills, your fuel economy and your ability to keep your plane healthy.
 
 **Twitter:** https://twitter.com/IntrepidLou  
