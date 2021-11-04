@@ -16,7 +16,7 @@ Dev Log
 Gained consistency on boarding/deboarding the plane. But as usual, a couple of things broke down in the process. I can confidently call it a day.  
 
 **2021-10-31**  
-Today's 'productive' work went to searching resources. I got a couple of assets: the **Nature Starter Kit 2** from which I plan to get the kind of scenery I want, and also checked out some video about **Vegatation Spawner**, which will indeed come handy with such a big terrain.  
+Today's 'productive' work went to searching resources. I got a couple of assets: the **Nature Starter Kit 2** from which I plan to get the kind of scenery I want, and also checked out some video about **Vegetation Spawner**, which will indeed come handy with such a big terrain.  
 Speaking of which, a 10000 x 10000 grid is a pretty convenient size. The problem with this distance is how to fill it up with relevant content. Smaller than that and it won't make sense to travel by plane. That's why I'm generically looking at procedural generators. The idea is to procedurally create the terrain and vegetation. For villages I can maybe create them in a more manual way.  
 A strategy might be like creating 1000 x 1000 squares, which are probably easier to explore manually, and then add neighbour regions, but that means I'll end up having to create 100 of these. We'll see. Then, the idea is to create the manual content and afterwards fill it up with procedural vegetation, which takes care automatically about not placing grass or tress on the layers where I don't allow it to, and also restrict it depending on terrain elevation. 
 
